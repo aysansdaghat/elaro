@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>خدمات | ELARO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-base="../">
+
+  <header id="site-header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>خدمات الارو</h1>
+        <p>خدمات تخصصی مراقبت از پوست و مو</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+
+        <!-- فیلتر و جست‌وجوی جدید -->
+        <div class="service-toolbar">
+          <div class="search-field">
+            <span>⌕</span>
+            <input id="service-search" type="search" placeholder="نام خدمت یا کلمه کلیدی را جست‌وجو کنید...">
+            <button type="button" id="search-clear" class="search-clear" aria-label="پاک کردن جست‌وجو" hidden>×</button>
+          </div>
+
+          <!-- select اصلی برای منطق main.js می‌مونه، فقط مخفیه -->
+          <select id="service-category" aria-label="دسته‌بندی خدمات" hidden></select>
+
+          <div class="chip-row" id="category-chips" role="group" aria-label="دسته‌بندی خدمات"></div>
+
+          <div class="toolbar-meta">
+            <span id="result-count" aria-live="polite"></span>
+            <button type="button" id="reset-filters" class="reset-filters" hidden>حذف فیلترها</button>
+          </div>
+        </div>
+
+        <div class="card-grid" id="services-list"></div>
+      </div>
+    </section>
+
+    <section class="section section-cream service-gallery-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">SKIN CARE GALLERY</span>
+          <h2>مراقبت و شادابی پوست</h2>
+          <p>نگاهی به نمونه‌های قبل و بعد خدمات</p>
+        </div>
+
+        <div class="gallery-slider" id="service-gallery">
+          <button class="gallery-arrow" type="button" data-gallery-prev aria-label="تصویر قبلی">‹</button>
+
+          <div class="gallery-track">
+            <article class="gallery-slide">
+              <div class="gallery-pair">
+                <figure>
+                  <img src="../assets/images/images15.png" onerror="this.src='../assets/images/placeholder.svg'" alt="قبل از مراقبت اول">
+                  <figcaption>قبل</figcaption>
+                </figure>
+                <figure>
+                  <img src="../assets/images/images16.png" onerror="this.src='../assets/images/placeholder.svg'" alt="بعد از مراقبت اول">
+                  <figcaption>بعد</figcaption>
+                </figure>
+              </div>
+              <h3>نمونه مراقبت پوستی ۱</h3>
+            </article>
+
+            <article class="gallery-slide">
+              <div class="gallery-pair">
+                <figure>
+                  <img src="../assets/images/images17.png" onerror="this.src='../assets/images/placeholder.svg'" alt="قبل از مراقبت دوم">
+                  <figcaption>قبل</figcaption>
+                </figure>
+                <figure>
+                  <img src="../assets/images/images18.png" onerror="this.src='../assets/images/placeholder.svg'" alt="بعد از مراقبت دوم">
+                  <figcaption>بعد</figcaption>
+                </figure>
+              </div>
+              <h3>نمونه مراقبت پوستی ۲</h3>
+            </article>
+
+            <article class="gallery-slide">
+              <div class="gallery-pair">
+                <figure>
+                  <img src="../assets/images/images19.png" onerror="this.src='../assets/images/placeholder.svg'" alt="قبل از مراقبت سوم">
+                  <figcaption>قبل</figcaption>
+                </figure>
+                <figure>
+                  <img src="../assets/images/images20.png" onerror="this.src='../assets/images/placeholder.svg'" alt="بعد از مراقبت سوم">
+                  <figcaption>بعد</figcaption>
+                </figure>
+              </div>
+              <h3>نمونه مراقبت پوستی ۳</h3>
+            </article>
+          </div>
+
+          <button class="gallery-arrow" type="button" data-gallery-next aria-label="تصویر بعدی">›</button>
+        </div>
+
+        <div class="gallery-dots" aria-label="انتخاب تصویر"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <div id="toast"></div>
+
+  <script src="../js/storage.js"></script>
+  <script src="../js/main.js"></script>
+  
+  <script src="../js/service-filter.js"></script>
+</body>
+</html>
