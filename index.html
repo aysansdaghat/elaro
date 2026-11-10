@@ -1,1 +1,60 @@
-<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>پنل مدیریت | ELARO</title><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/responsive.css"></head><body data-base="../"><header id="site-header"></header><main><section class="page-hero"><div class="container"><h1>پنل مدیریت ELARO</h1><p>مدیریت آزمایشی نوبت‌ها، خدمات و پزشکان</p></div></section><section class="content-section"><div class="container"><div id="admin-login" class="form-card narrow"><h2>ورود مدیر</h2><p class="muted">رمز آزمایشی: <b>elaro123</b></p><form id="login-form"><div class="field"><label for="admin-password">رمز عبور</label><input id="admin-password" type="password" required></div><div id="login-error"></div><button class="btn">ورود به پنل</button></form></div><div id="admin-panel" hidden><div class="stats-grid"><div class="stat-card"><small>کل نوبت‌ها</small><b id="stat-total">۰</b></div><div class="stat-card"><small>نوبت‌های فعال</small><b id="stat-active">۰</b></div><div class="stat-card"><small>تعداد خدمات</small><b id="stat-services">۰</b></div><div class="stat-card"><small>پزشکان فعال</small><b id="stat-doctors">۰</b></div></div><div class="admin-layout"><aside class="admin-side"><a href="#admin-content">مدیریت نوبت‌ها</a><a href="#admin-content">خدمات و قیمت‌ها</a><a href="#admin-content">پزشکان</a><button class="btn btn-outline btn-small" id="admin-logout">خروج</button></aside><div class="admin-main" id="admin-content"></div></div></div></div></section></main><footer id="site-footer"></footer><div id="toast"></div><script src="../js/storage.js"></script><script src="../js/main.js"></script><script src="../js/admin.js"></script></body></html>
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="کلینیک زیبایی ELARO؛ معرفی خدمات پوست و مو و رزرو آنلاین نوبت">
+  <title>ELARO | کلینیک زیبایی، پوست و مو</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-base="">
+<header id="site-header"></header>
+<main>
+  <section class="hero"><div class="container hero-grid">
+    <div class="hero-copy"><span class="eyebrow">ELARO BEAUTY CLINIC</span><h1>زیبایی، با مراقبتی ظریف و تخصصی</h1>
+      <p>در کلینیک الارو، مسیر مراقبت از پوست و مو با مشاوره تخصصی و برنامه‌ای متناسب با نیاز شما آغاز می‌شود.</p>
+      <div class="hero-actions"><a class="btn" href="pages/booking.html">رزرو نوبت آنلاین</a><a class="btn btn-outline" href="pages/services.html">مشاهده خدمات</a></div>
+      <div class="hero-note"><span>✦</span> تجربه‌ای آرام، حرفه‌ای و متناسب با شما</div>
+    </div>
+    <div class="hero-visual"><img src="assets/images/images11.jpg" alt="فضای آرام مراقبت از پوست" onerror="this.onerror=null;this.src='assets/images/placeholder.svg'"><span class="floating-note">زیبایی طبیعی، انتخاب آگاهانه</span></div>
+  </div></section>
+  <section class="section featured-section"><div class="container">
+    <div class="section-heading"><span class="eyebrow">FEATURED SERVICES</span><h2>خدمات ویژه الارو</h2><p>چند انتخاب محبوب برای شروع مسیر مراقبت و زیبایی شما</p></div>
+    <div class="card-grid featured-grid" id="home-services"></div>
+    <div class="center mt-3"><a class="btn btn-outline" href="pages/services.html">مشاهده همه خدمات</a></div>
+  </div></section>
+  <section class="section section-cream before-after-section">
+    <div class="container">
+      <div class="section-heading"><span class="eyebrow">OUR GALLERY</span><h2>نگاهی به جزئیات مراقبت</h2><p>نمونه‌ای تعاملی از گالری تصاویر الارو</p></div>
+      <div class="comparison-grid">
+        <article class="comparison-card">
+          <div class="comparison-heading"><h3>مراقبت و شادابی پوست</h3><span>نمونه نمایشی</span></div>
+          <div class="comparison-view" style="--split:50%">
+            <img class="comparison-after" src="assets/images/images14.png" alt="تصویر نمونه مراقبت پوست">
+            <div class="comparison-before-wrap"><img src="assets/images/images13.png" alt="تصویر نمونه دوم مراقبت پوست"></div>
+
+            <input class="comparison-range" type="range" min="5" max="95" value="50" aria-label="جابجایی برای مقایسه تصاویر">
+            <span class="comparison-handle" aria-hidden="true">↔</span>
+          </div>
+          <p class="comparison-caption">برای دیدن هر تصویر، دستگیره را به چپ و راست بکشید.</p>
+        </article>
+        <aside class="gallery-note">
+          <span class="eyebrow">ELARO EXPERIENCE</span><h3>زیبایی با انتخاب آگاهانه</h3>
+          <p>در الارو، هر مسیر مراقبتی با شناخت نیازهای شما و مشاوره تخصصی آغاز می‌شود.</p>
+          <a class="btn" href="pages/booking.html">رزرو جلسه مشاوره</a>
+          <small>این تصاویر صرفاً نمونه‌های نمایشی رابط کاربری هستند و نتیجه درمان واقعی را نشان نمی‌دهند.</small>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <section class="section section-cream"><div class="container split"><div><span class="eyebrow">WHY ELARO</span><h2>زیبایی در کنار آرامش و اطمینان</h2><p class="muted">از مشاوره اولیه تا انتخاب روش مراقبت، تلاش می‌کنیم تجربه‌ای روشن، محترمانه و متناسب با نیاز شما فراهم کنیم.</p><div class="feature-list"><div><b>✧</b><span><strong>مشاوره تخصصی</strong><small>انتخاب خدمات با توجه به شرایط شما</small></span></div><div><b>✧</b><span><strong>برنامه‌ریزی آسان</strong><small>مشاهده زمان‌های پیشنهادی و رزرو آنلاین</small></span></div><div><b>✧</b><span><strong>محیط آرام</strong><small>توجه به جزئیات و تجربه مراجعه‌کننده</small></span></div></div></div><img class="rounded-photo" src="assets/images/images12.jpg" alt="مراقبت پوستی" onerror="this.onerror=null;this.src='assets/images/placeholder.svg'"></div></section>
+  <section class="section"><div class="container"><div class="section-heading"><span class="eyebrow">OUR TEAM</span><h2>با متخصصان الارو آشنا شوید</h2><p>تیم نمونه برای نمایش نسخه آزمایشی وب‌سایت</p></div><div class="card-grid" id="home-doctors"></div></div></section>
+  <section class="section section-cream"><div class="container"><div class="section-heading"><span class="eyebrow">HOW TO BOOK</span><h2>رزرو نوبت در چند قدم ساده</h2></div><div class="steps-grid"><div class="step"><b>۰۱</b><strong>انتخاب خدمت</strong><small>خدمت موردنظر خود را انتخاب کنید.</small></div><div class="step"><b>۰۲</b><strong>انتخاب پزشک</strong><small>پزشک یا اولین زمان آزاد را برگزینید.</small></div><div class="step"><b>۰۳</b><strong>انتخاب زمان</strong><small>تاریخ و ساعت مناسب را مشخص کنید.</small></div><div class="step"><b>۰۴</b><strong>ثبت درخواست</strong><small>اطلاعات را تأیید و کد پیگیری دریافت کنید.</small></div></div></div></section>
+  <section class="section reviews-section"><div class="container"><div class="section-heading"><span class="eyebrow">CLIENT STORIES</span><h2>تجربه مراجعه‌کنندگان الارو</h2><p>چند نمونه نظر برای نمایش بخش دیدگاه‌ها</p></div><div class="reviews-slider" id="reviews-slider"><button type="button" class="review-arrow" data-review-prev aria-label="نظر قبلی">‹</button><article class="review-card"></article><button type="button" class="review-arrow" data-review-next aria-label="نظر بعدی">›</button><div class="review-dots"></div></div><p class="review-disclaimer">متن‌های این بخش نمونه نمایشی هستند؛ پیش از انتشار، آن‌ها را با نظرهای واقعی و با اجازه مراجعه‌کنندگان جایگزین کنید.</p></div></section>
+  <section class="section"><div class="container narrow"><div class="section-heading"><span class="eyebrow">FAQ</span><h2>سؤالات پرتکرار</h2></div><details><summary>چطور نوبت رزرو کنم؟</summary><p>از بخش رزرو نوبت، خدمت، پزشک، تاریخ و ساعت را انتخاب کنید و اطلاعات تماس را وارد کنید.</p></details><details><summary>آیا امکان پیگیری یا لغو نوبت وجود دارد؟</summary><p>در نسخه نمایشی، با کد پیگیری و شماره موبایل می‌توانید نوبت را مشاهده و در بازه مجاز لغو کنید.</p></details><details><summary>آیا رزروهای این نسخه واقعی هستند؟</summary><p>خیر. این پروژه نمونه فرانت‌اند است و اطلاعات فقط در مرورگر شما ذخیره می‌شوند.</p></details></div></section>
+  <section class="cta-band"><div class="container"><h2>برای شروع مسیر مراقبت خود آماده‌اید؟</h2><p>زمان مناسب خود را انتخاب کنید.</p><a class="btn btn-light" href="pages/booking.html">رزرو نوبت</a></div></section>
+</main>
+<footer id="site-footer"></footer><div id="toast" role="status" aria-live="polite"></div>
+<script src="js/storage.js"></script><script src="js/main.js"></script>
+</body></html>
